@@ -1,0 +1,89 @@
+.top-bar {
+    background-color:black;
+    padding:30px;
+}
+
+.bottom-p {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin-top:50px;
+}
+
+#user_profile .title-p {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:45px;
+    margin-bottom:75px;
+}
+
+#user_profile .title-p h1 {
+    font-size:55px;
+    font-weight:600;
+}
+
+#user_profile .title-p h1 span {
+    color:red;
+}
+
+#user_profile .title-p p {
+    font-size:20px;
+    font-weight:500;
+}
+
+#user_profile .mc-grid {
+    display:flex;
+}
+
+#user_profile .mc-grid .left-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    width:130px;
+}
+
+#user_profile .mc-grid .mc {
+    width:100%;
+}
+
+#user_profile .mc-graph-infos {
+    display:flex;
+    justify-content: space-between;
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:75px;
+}
+
+#user_profile .mc-graph-infos .data-p .right-infos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#user_profile .mc-graph-infos .data-p .right-infos .each-part {
+    display:flex;
+    align-items:center;
+}
+
+#user_profile .mc-graph-infos .data-p .right-infos .each-part .pt {
+    margin-left:30px;
+}
+
+#user_profile .mc-graph-infos .data-p .right-infos .each-part .pt .mp {
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+#user_profile .mc-graph-infos .data-p .right-infos .each-part .pt .sm {
+    opacity:0.6;
+    margin-top:0;
+    font-weight:700;
+}

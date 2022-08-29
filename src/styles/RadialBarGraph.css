@@ -1,0 +1,38 @@
+#user_profile > div.mc > div.graph-p > div.bottom-p > div:nth-child(3) > div > div > svg > g > g.recharts-layer.recharts-radial-bar-background > path:nth-child(1) {
+    display:none;
+}
+
+.radial-bar {
+    width:28% !important;
+    height:inherit !important;
+    aspect-ratio: 1 / 1;
+    padding:20px;
+    position:relative;
+}
+
+.mc-center {
+    position:absolute;
+    width:100%;
+    text-align:center;
+    left:0;
+    top:calc(50% - 60px);
+}
+
+.mc-center p {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: grey;
+    font-weight: 500;
+    font-size: 25px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mc-center .score {
+    font-size:40px;
+    font-weight:bold;
+    color:black;
+}
+
+/* transform: "rotate(270deg)" */

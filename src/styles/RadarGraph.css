@@ -1,0 +1,16 @@
+.recharts-polar-grid .recharts-polar-grid-angle > line {
+    display:none;
+}
+
+.radar-graph {
+    width:28% !important;
+    height:inherit !important;
+    aspect-ratio: 1 / 1;
+    border-radius:10px;
+    padding:20px;
+}
+
+.radar-graph .recharts-text {
+    fill:white;
+    font-weight:bold;
+}

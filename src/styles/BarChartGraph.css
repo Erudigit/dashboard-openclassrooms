@@ -1,0 +1,63 @@
+.bar-chart {
+    position:relative;
+}
+
+.bar-chart .recharts-yAxis {
+    transform: translate(40px);
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: 22px;
+}
+
+#user_profile > div.mc-grid > div.mc > div.mc-graph-infos > div.graph-p > div.top-p > div > div > div > svg > g tspan {
+    transform:translate(0, 30px);
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: 22px;
+}
+
+#user_profile .recharts-cartesian-axis-ticks {
+    transform: translate(0px, 15px);
+}
+
+.bar-chart .recharts-legend-wrapper ul {
+    display:flex;
+    justify-content:end;
+}
+
+.bar-chart .recharts-legend-wrapper li {
+    display:flex !important;
+    align-items: center;
+}
+
+.bar-chart .recharts-legend-wrapper li:first-child span {
+    margin-right:35px;
+}
+
+.bar-chart .recharts-legend-wrapper li span {
+    font-size:22px;
+    font-weight:500;
+    color:grey !important;
+    margin-left:15px;
+}
+
+.bar-chart .custom-tooltip {
+    background-color:rgb(180,0,0);
+}
+
+.bar-chart .custom-tooltip p {
+    color:white !important;
+    font-weight:300;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.bar-chart .title-graph {
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:22px;
+    color:black;
+    font-weight:500;
+    margin-top:0;
+}
