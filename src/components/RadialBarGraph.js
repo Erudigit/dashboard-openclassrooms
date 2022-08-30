@@ -4,16 +4,20 @@ import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from 'recharts
 
 function RadialBarGraph(props) {
 
-    const todayScore = props.todayScore * 100;
-    // const performanceData = props.performanceData;
-    // const sessions = []
+    let todayScore;
+    let comp;
 
-    // Object.keys(performanceKind).forEach(session => sessions.push({
-    //   subject: performanceKind[session],
-    //   A: performanceData[session - 1].value,
-    // }));
+    if (props.todayScore) {
 
-    // const data = sessions;
+      todayScore = props.todayScore * 100;
+      comp = <div class="mc-center"><p class="score">{todayScore}%</p><p>of your goal</p></div>
+
+    } else {
+
+      todayScore = 100;
+      comp = <div class="mc-center"><p>No score available for today.</p></div>
+
+    }
 
     const data = [
         {
@@ -31,6 +35,7 @@ function RadialBarGraph(props) {
   
     return (
         <div className="radial-bar" style={{ width: "1100px", height: "600px", backgroundColor: "white" }}>
+          {console.log(props.todayScore)}
           <ResponsiveContainer width="100%" height="100%">
             <RadialBarChart cx="50%" cy="50%" innerRadius="60%" outerRadius="100%" barSize={15} data={data} startAngle={90} endAngle={450}>
             <RadialBar 
@@ -40,10 +45,7 @@ function RadialBarGraph(props) {
             />
             </RadialBarChart>
           </ResponsiveContainer>
-          <div class="mc-center">
-            <p class="score">{todayScore}%</p>
-            <p>of your goal</p>
-          </div>
+            {comp}
         </div>
     )
 }
