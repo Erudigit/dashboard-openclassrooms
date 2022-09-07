@@ -35,7 +35,7 @@ function RadialBarGraph(props) {
   
     return (
         <div className="radial-bar" style={{ width: "1100px", height: "600px", backgroundColor: "white" }}>
-          {console.log(props.todayScore)}
+          {/* {console.log(props.todayScore)} */}
           <ResponsiveContainer width="100%" height="100%">
             <RadialBarChart cx="50%" cy="50%" innerRadius="60%" outerRadius="100%" barSize={15} data={data} startAngle={90} endAngle={450}>
             <RadialBar 

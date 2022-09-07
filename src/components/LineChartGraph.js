@@ -1,6 +1,18 @@
 import '../styles/LineChartGraph.css'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, CustomizedTooltip } from 'recharts';
+import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import PropTypes from 'prop-types'
 
+
+ /**
+ * Component for showing details of the user.
+ *
+ * @component
+ * @example
+ * const averageSessions = [{day: 7, sessionLength: 50}]
+ * return (
+ *   <LineChartGraph averageSessions={averageSessions} />
+ * )
+ */
 
 function LineChartGraph(props) {
 
@@ -29,7 +41,7 @@ function LineChartGraph(props) {
   
     return (
         <div className="line-chart" style={{ width: "1100px", height: "600px", backgroundColor: "rgb(255,0,0)" }}>
-          {/* {console.log(svgDToText)} */}
+          {console.log(props.averageSessions)}
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
               <Line type="monotone" dataKey="time" stroke="white" strokeWith={2} tick={false} tickLine={false} />
@@ -39,6 +51,13 @@ function LineChartGraph(props) {
           </ResponsiveContainer> 
         </div>
     )
+}
+
+BarChartGraph.propTypes = {
+  averageSessions: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.number,
+    sessionLength: PropTypes.number,
+  }))
 }
 
 export default LineChartGraph

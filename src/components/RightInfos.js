@@ -9,7 +9,7 @@ function RightInfos(props) {
 
     return (
         <div className="right-infos">
-            {console.log(props.keyData)}
+            {/* {console.log(props.keyData)} */}
             <div class="each-part">
                 <img src={CaloriesLogo} alt="Calories Logo" />
                 <div class="pt">

@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- How to launch and use the app -->
+<!-- Version of node -->
+<!-- Include the api we used -->
+
+<!-- https://reactjs.org/docs/typechecking-with-proptypes.html#function-components -->
+<!-- https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/ -->
+<!-- First install jsDoc (globally) : https://www.npmjs.com/package/jsdoc -->
+<!-- Then library for component (inside the application) : https://www.npmjs.com/package/better-docs -> @component -->
+<!-- Write the command to generate -->

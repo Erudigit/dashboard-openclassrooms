@@ -1,6 +1,6 @@
 import '../styles/BarChartGraph.css'
 import { BarChart, Bar, Label, Cell, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
+import PropTypes from 'prop-types'
 
 function BarChartGraph(props) {
 
@@ -59,6 +59,10 @@ function BarChartGraph(props) {
             <p class="title-graph">Daily activity</p>
         </div>
     )
+}
+
+BarChartGraph.propTypes = {
+  lastSessions: PropTypes.string
 }
 
 export default BarChartGraph

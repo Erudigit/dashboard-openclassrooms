@@ -18,21 +18,6 @@ function User() {
     const [averageSessions, setAverageSessions] = useState({ sessions: [] })
     const [performance, setPerformance] = useState({ kind: [], date: [] })
 
-    // var userData = {
-    //     "FirstName": user?.userInfos?.firstName,
-    //     "LastName": user?.userInfos?.lastName,
-    //     "Age": user?.userInfos?.age,
-    //     "TodayScore": user?.todayScore,
-    //     "CalorieCount": user?.keyData?.calorieCount,
-    //     "ProteinCount": user?.keyData?.proteinCount,
-    //     "CarbohydrateCount": user?.keyData?.carbohydrateCount,
-    //     "LipidCount": user?.keyData?.lipidCount,
-    //     "Activity": activity?.sessions,
-    //     "Sessions": averageSessions?.sessions,
-    //     "PerformanceKind": performance?.kind,
-    //     "PerormanceData": performance?.data
-    // }
-
     useEffect(() => {
         fetch(`/user/${userId}`)
         .then(res => res.json())
@@ -97,43 +82,3 @@ function User() {
 }
 
 export default User;
-
-
-// import React, { componentDidMount, useSate } from 'react';
-// import { useParams } from 'react-router-dom'
-
-
-// class Users extends React.Component {
-
-//     constructor() {
-
-//         super();
-
-//         console.log(this.props)
-
-//         this.userId = this.props.params.userId
-
-//         this.state = {
-//             users: {}
-//         };
-//     };
-
-//     render() {
-//         console.log(this.state.users);
-//         return (
-//             <div></div>
-//         )};
-
-//         
-// };
-
-
-// function withRouter(Children){
-//     return(props)=>{
-//       const params = useParams()
-      
-//       return <Children {...props} params={params}/>
-//     }
-// }
-
-// export default withRouter(Users)
