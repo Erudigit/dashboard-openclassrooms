@@ -1,10 +1,29 @@
-# Gettting Started with Create React App
+# Dashboard Sport App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We are introducing our dashboard for SportSee app. This allows you to follow your progression and all the results from your activities. 
 
-## Available Scripts
+Dynamic graphs, scores and everything you need to have a real view of your evolution.
 
-In the project directory, you can run:
+We are trying to keep our best to improve the dashboard, changes can be merged to master.
+
+## Introduction
+
+The dashboard was developped to be the most readiable and comprehensiable. The mains colors we used are the red and black with the SportSee colors.
+
+![Image of the dashboard](/path/to/img.png)
+
+## Getting Started
+
+### Prerequisites
+
+
+
+### Install the node server
+
+First of all, we need to launch the server to have our routes and URLs to fetch the data on.
+
+
+
 
 ### `npm start`
 
