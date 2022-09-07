@@ -16,11 +16,27 @@ The dashboard was developped to be the most readiable and comprehensiable. The m
 
 ### Prerequisites
 
+- [nodeJs (V12.18)](https://nodejs.org/en/)
+- [yarn](https://yarnpkg.com/).
 
+### Node server
 
-### Install the node server
+#### Install the node server
 
-First of all, we need to launch the server to have our routes and URLs to fetch the data on.
+First of all, we need to launch the server to have our routes and URLs to fetch the data on. Follow the instruction on the guithub provided for the server : 
+
+- [node server](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
+
+#### Launch the server
+
+To launch the server, you need to go inside your reporsitory and run `yarn start`.
+
+It will normaly launch the server on :
+> http://localhost:3000/
+
+### Front Dashboard in React
+
+#### Install the 
 
 
 
