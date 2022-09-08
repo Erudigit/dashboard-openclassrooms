@@ -36,7 +36,39 @@ It will normaly launch the server on :
 
 ### Front Dashboard in React
 
-#### Install the 
+#### Install the dashboard
+
+To use our dashboard, you need to clone this repository on your machine :
+```
+git init
+git remote add origin https://github.com/Erudigit/dashboard-openclassrooms.git
+git pull origin master
+```
+Be sure that the proxy is on "http://localhost:3000" in package.json.
+
+#### Launch the dashboard
+
+Before launch the dashboard, you will need to launch the server on the adress http://localhost:3000.
+Once you installed the dashboard, you only need to run it with `yarn start`.
+The terminal will ask you to launch it on the port **3001**, say **yes**.
+
+Your dashboard is ready to us. 🎉
+
+## How to use
+
+### Ressource
+
+All the data you can fetch from the server concern 2 fictitious persons for the example. That will allow you to understand how the dashboard work his possibilities.
+
+The Id of both are **12** and **18**, you will need to fetch data from the two Ids.
+
+### Use the dashboard
+
+
+
+
+
+
 
 
 
