@@ -53,11 +53,11 @@ function LineChartGraph(props) {
     )
 }
 
-BarChartGraph.propTypes = {
-  averageSessions: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.number,
-    sessionLength: PropTypes.number,
-  }))
-}
+// BarChartGraph.propTypes = {
+//   averageSessions: PropTypes.arrayOf(PropTypes.shape({
+//     day: PropTypes.number,
+//     sessionLength: PropTypes.number,
+//   }))
+// }
 
 export default LineChartGraph

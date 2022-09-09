@@ -1,3 +1,11 @@
-{"opts": {
-    "template": "node_modules/better-docs"
-  }}
+{
+    "opts": {
+        "template": "node_modules/better-docs"
+    },
+    "tags": {
+        "allowUnknownTags": ["component"]
+    },
+    "plugins": [
+        "node_modules/better-docs/component"
+    ]
+}

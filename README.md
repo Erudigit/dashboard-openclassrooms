@@ -10,7 +10,7 @@ We are trying to keep our best to improve the dashboard, changes can be merged t
 
 The dashboard was developped to be the most readiable and comprehensiable. The mains colors we used are the red and black with the SportSee colors.
 
-![Image of the dashboard](/path/to/img.png)
+![Image of the dashboard](/src/assets/dashboard-screen.png)
 
 ## Getting Started
 
