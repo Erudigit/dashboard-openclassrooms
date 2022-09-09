@@ -71,8 +71,6 @@ The dashboard is now running on the port **3001**, you can navigate and have a l
 
 And then here we are. 🥳
 
-![Image of the dashboard](/path/to/img.png)
-
 
 ## Documentation
 
