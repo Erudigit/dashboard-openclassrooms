@@ -1,6 +1,17 @@
 import '../styles/RadialBarGraph.css'
 import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from 'recharts';
+import PropTypes from 'prop-types'
 
+ /**
+ * Component for showing the score of the day of the user in a radial bar graph.
+ *
+ * @component
+ * @example
+ * const todayScore = 0.12
+ * return (
+ *   <RadialBarGraph todayScore={todayScore} />
+ * )
+ */
 
 function RadialBarGraph(props) {
 
@@ -48,6 +59,10 @@ function RadialBarGraph(props) {
             {comp}
         </div>
     )
+}
+
+RadialBarGraph.propTypes = {
+  todayScore: PropTypes.number
 }
 
 export default RadialBarGraph

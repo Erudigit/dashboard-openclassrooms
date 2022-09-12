@@ -2,6 +2,17 @@ import '../styles/BarChartGraph.css'
 import { BarChart, Bar, Label, Cell, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import PropTypes from 'prop-types'
 
+ /**
+ * Component for showing weight and calories bruned for each day of the user in a bar chart graph.
+ *
+ * @component
+ * @example
+ * const lastSessions = [{day: "2020-07-01", kilogram: 80, calories: 240}]
+ * return (
+ *   <BarChartGraph lastSessions={lastSessions} />
+ * )
+ */
+
 function BarChartGraph(props) {
 
     const sessionsData = props.lastSessions;
@@ -31,6 +42,7 @@ function BarChartGraph(props) {
     return (
 
         <div className="bar-chart" style={{ width: "1100px", height: "600px"}}>
+          {/* {console.log(props.lastSessions)} */}
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 barGap={15}
@@ -62,7 +74,11 @@ function BarChartGraph(props) {
 }
 
 BarChartGraph.propTypes = {
-  lastSessions: PropTypes.string
+  lastSessions: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string,
+    kilogram: PropTypes.number,
+    calories: PropTypes.number
+  }))
 }
 
 export default BarChartGraph

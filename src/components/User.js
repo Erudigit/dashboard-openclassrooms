@@ -8,6 +8,17 @@ import RadialBarGraph from "./RadialBarGraph.js";
 import Navbar from "./Navbar.js";
 import VerticalBar from './VerticalBar.js';
 import RightInfos from './RightInfos.js';
+import PropTypes from 'prop-types'
+
+ /**
+ * Component that display all the others component and the dashboard page. It fetch all the data from the server for a specific user.
+ *
+ * @component
+ * @example
+ * return (
+ *   <User />
+ * )
+ */
 
 function User() {
 
@@ -50,7 +61,7 @@ function User() {
 
     return (
         <div id="user_profile">
-            {console.log(user.keyData)}
+            {console.log(averageSessions)}
             <div className="top-bar"><Navbar /></div>
             <div class="mc-grid">
                 <div className="left-bar"><VerticalBar /></div>

@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> RightInfos.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components</h3><ul><li><a href="BarChartGraph.html">BarChartGraph</a></li><li><a href="LineChartGraph.html">LineChartGraph</a></li><li><a href="RadarGraph.html">RadarGraph</a></li><li><a href="RadialBarGraph.html">RadialBarGraph</a></li><li><a href="RightInfos.html">RightInfos</a></li><li><a href="User.html">User</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>RightInfos.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import '../styles/RightInfos.css'
+import CaloriesLogo from '../assets/calories-icon.png';
+import CarbsLogo from '../assets/carbs-icon.png';
+import FatLogo from '../assets/fat-icon.png';
+import ProteinLogo from '../assets/protein-icon.png';
+import PropTypes from 'prop-types'
+
+ /**
+ * Component for showing data (total calories, total proteins, total carbs, total lipids) of the user in a radial bar graph.
+ *
+ * @component
+ * @example
+ * const keyData = [{calorieCount: 1930, carbohydrateCount: 290, lipidCount: 50, proteinCount: 155}]
+ * return (
+ *   &lt;RightInfos keyData={keyData} />
+ * )
+ */
+
+function RightInfos(props) {
+
+    return (
+        &lt;div className="right-infos">
+            {/* {console.log(props)} */}
+            &lt;div class="each-part">
+                &lt;img src={CaloriesLogo} alt="Calories Logo" />
+                &lt;div class="pt">
+                    &lt;p class="mp">{props.keyData.calorieCount}kCal&lt;/p>
+                    &lt;p class="sm">Calories&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="each-part">
+                &lt;img src={ProteinLogo} alt="Protein Logo" />
+                &lt;div class="pt">
+                    &lt;p class="mp">{props.keyData.proteinCount}g&lt;/p>
+                    &lt;p class="sm">Proteins&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="each-part">
+                &lt;img src={CarbsLogo} alt="Carbs Logo" />
+                &lt;div class="pt">
+                    &lt;p class="mp">{props.keyData.carbohydrateCount}g&lt;/p>
+                    &lt;p class="sm">Carbs&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="each-part">
+                &lt;img src={FatLogo} alt="Fat Logo" />
+                &lt;div class="pt">
+                    &lt;p class="mp">{props.keyData.lipidCount}g&lt;/p>
+                    &lt;p class="sm">Lipids&lt;/p>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    )
+}
+
+RightInfos.propTypes = {
+    keyData: PropTypes.arrayOf(PropTypes.shape({
+        calorieCount: PropTypes.number,
+        carbohydrateCount: PropTypes.number, 
+        lipidCount: PropTypes.number, 
+        proteinCount: PropTypes.number
+    }))
+}
+
+export default RightInfos</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 
  /**
- * Component for showing details of the user.
+ * Component for showing time of activity for the last 7 days of the user in line chart graph.
  *
  * @component
  * @example
@@ -41,7 +41,6 @@ function LineChartGraph(props) {
   
     return (
         <div className="line-chart" style={{ width: "1100px", height: "600px", backgroundColor: "rgb(255,0,0)" }}>
-          {console.log(props.averageSessions)}
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
               <Line type="monotone" dataKey="time" stroke="white" strokeWith={2} tick={false} tickLine={false} />
@@ -53,11 +52,11 @@ function LineChartGraph(props) {
     )
 }
 
-// BarChartGraph.propTypes = {
-//   averageSessions: PropTypes.arrayOf(PropTypes.shape({
-//     day: PropTypes.number,
-//     sessionLength: PropTypes.number,
-//   }))
-// }
+LineChartGraph.propTypes = {
+  averageSessions: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.number,
+    sessionLength: PropTypes.number
+  }))
+}
 
 export default LineChartGraph
