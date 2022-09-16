@@ -10,7 +10,10 @@ import PropTypes from 'prop-types'
  *
  * @component
  * @example
- * const keyData = [{calorieCount: 1930, carbohydrateCount: 290, lipidCount: 50, proteinCount: 155}]
+ * const calories = 1930
+ * const proteins = 155
+ * const carbs = 290
+ * const lipids = 50
  * return (
  *   <RightInfos keyData={keyData} />
  * )
@@ -18,35 +21,39 @@ import PropTypes from 'prop-types'
 
 function RightInfos(props) {
 
+    const calories = props.calories;
+    const proteins = props.proteins;
+    const carbs =  props.carbs;
+    const lipids = props.lipids;
+
     return (
         <div className="right-infos">
-            {/* {console.log(props)} */}
-            <div class="each-part">
+            <div className="each-part">
                 <img src={CaloriesLogo} alt="Calories Logo" />
-                <div class="pt">
-                    <p class="mp">{props.keyData.calorieCount}kCal</p>
-                    <p class="sm">Calories</p>
+                <div className="pt">
+                    <p className="mp">{calories}kCal</p>
+                    <p className="sm">Calories</p>
                 </div>
             </div>
-            <div class="each-part">
+            <div className="each-part">
                 <img src={ProteinLogo} alt="Protein Logo" />
-                <div class="pt">
-                    <p class="mp">{props.keyData.proteinCount}g</p>
-                    <p class="sm">Proteins</p>
+                <div className="pt">
+                    <p className="mp">{proteins}g</p>
+                    <p className="sm">Proteins</p>
                 </div>
             </div>
-            <div class="each-part">
+            <div className="each-part">
                 <img src={CarbsLogo} alt="Carbs Logo" />
-                <div class="pt">
-                    <p class="mp">{props.keyData.carbohydrateCount}g</p>
-                    <p class="sm">Carbs</p>
+                <div className="pt">
+                    <p className="mp">{carbs}g</p>
+                    <p className="sm">Carbs</p>
                 </div>
             </div>
-            <div class="each-part">
+            <div className="each-part">
                 <img src={FatLogo} alt="Fat Logo" />
-                <div class="pt">
-                    <p class="mp">{props.keyData.lipidCount}g</p>
-                    <p class="sm">Lipids</p>
+                <div className="pt">
+                    <p className="mp">{lipids}g</p>
+                    <p className="sm">Lipids</p>
                 </div>
             </div>
         </div>

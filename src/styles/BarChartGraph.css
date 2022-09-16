@@ -1,5 +1,6 @@
 .bar-chart {
     position:relative;
+    width:inherit !important;
 }
 
 .bar-chart .recharts-yAxis {

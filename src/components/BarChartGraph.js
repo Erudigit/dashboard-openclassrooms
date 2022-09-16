@@ -1,5 +1,5 @@
 import '../styles/BarChartGraph.css'
-import { BarChart, Bar, Label, Cell, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import PropTypes from 'prop-types'
 
  /**
@@ -68,7 +68,7 @@ function BarChartGraph(props) {
 
               </BarChart>
             </ResponsiveContainer>
-            <p class="title-graph">Daily activity</p>
+            <p className="title-graph">Daily activity</p>
         </div>
     )
 }

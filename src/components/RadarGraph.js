@@ -29,7 +29,7 @@ function RadarGraph(props) {
 
   return (
       <div className="radar-graph" style={{ width: "1100px", height: "600px", backgroundColor: "rgb(40,45,48" }}>
-        {/* {console.log(performanceKind)} */}
+        {console.log(typeof(performanceKind))}
           <ResponsiveContainer width="100%" height="100%">
               <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
               <PolarGrid  />
@@ -42,17 +42,20 @@ function RadarGraph(props) {
 }
 
 RadarGraph.propTypes = {
-  performanceKindArrayOf: PropTypes.arrayOf(PropTypes.string),
-  performanceData: PropTypes.arrayOf({
+  performanceKind: PropTypes.arrayOf({
+    1: PropTypes.string,
+    2: PropTypes.string,
+    3: PropTypes.string,
+    4: PropTypes.string,
+    5: PropTypes.string,
+    6: PropTypes.string
+  }),
+  performanceData: PropTypes.arrayOf(PropTypes.shape({
     calorieCount: PropTypes.number,
     carbohydrateCount: PropTypes.number, 
     lipidCount: PropTypes.number, 
     proteinCount: PropTypes.number
-})
-// averageSessions: PropTypes.arrayOf(PropTypes.shape({
-//   day: PropTypes.number,
-//   sessionLength: PropTypes.number
-// }))
+}))
 }
 
 export default RadarGraph

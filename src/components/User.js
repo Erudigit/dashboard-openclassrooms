@@ -8,7 +8,6 @@ import RadialBarGraph from "./RadialBarGraph.js";
 import Navbar from "./Navbar.js";
 import VerticalBar from './VerticalBar.js';
 import RightInfos from './RightInfos.js';
-import PropTypes from 'prop-types'
 
  /**
  * Component that display all the others component and the dashboard page. It fetch all the data from the server for a specific user.
@@ -61,9 +60,9 @@ function User() {
 
     return (
         <div id="user_profile">
-            {console.log(averageSessions)}
+            {/* {console.log(typeof(performance.kind))} */}
             <div className="top-bar"><Navbar /></div>
-            <div class="mc-grid">
+            <div className="mc-grid">
                 <div className="left-bar"><VerticalBar /></div>
                 <div className="mc">
                     <div className="title-p">
@@ -71,7 +70,7 @@ function User() {
                         <p>Congratulations! You reached yesterday's goal! 👏</p>
                         {/* <p>{JSON.stringify(averageSessions.sessions)}</p> */}
                     </div>
-                    <div class="mc-graph-infos">
+                    <div className="mc-graph-infos">
                         <div className="graph-p">
                             <div className="top-p">
                                 <BarChartGraph lastSessions={activity.sessions.length > 7 ? activity.sessions.slice(-7) : activity.sessions} />
@@ -83,7 +82,7 @@ function User() {
                             </div>
                         </div>
                         <div className="data-p">
-                            <RightInfos keyData={user.keyData} />
+                            <RightInfos calories={user.keyData.calorieCount} proteins={user.keyData.proteinCount} carbs={user.keyData.carbohydrateCount} lipids={user.keyData.lipidCount} />
                         </div>
                     </div>
                 </div>

@@ -41,6 +41,7 @@ function LineChartGraph(props) {
   
     return (
         <div className="line-chart" style={{ width: "1100px", height: "600px", backgroundColor: "rgb(255,0,0)" }}>
+          <h2>Average speed of your sessions</h2>
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
               <Line type="monotone" dataKey="time" stroke="white" strokeWith={2} tick={false} tickLine={false} />

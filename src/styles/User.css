@@ -3,6 +3,10 @@
     padding:30px;
 }
 
+.graph-p {
+    width:80%;
+}
+
 .bottom-p {
     display:flex;
     justify-content: space-between;
